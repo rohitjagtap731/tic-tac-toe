@@ -10,7 +10,7 @@ const TicTacToe = () => {
 
   let [count, setCount] = useState(0);
   let [lock, setLock] = useState(false);
-  const[header, setHeader] = useState(`Tic Tac Toe Game in <span>React</span>`);
+  const[header, setHeader] = useState(`Rohit Game in <span>React</span>`);
   let box1 = useRef(null);
   let box2 = useRef(null);
   let box3 = useRef(null);
