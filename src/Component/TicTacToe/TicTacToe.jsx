@@ -60,7 +60,7 @@ const TicTacToe = () => {
     data = ["","","","","","","","",""];
     setCount(0);
     setLock(false);
-    setHeader(`Tic Tac Toe Games in <span>React</span>`);
+    setHeader(`Tic Tac Toe Games in <span>Rohit</span>`);
     boxArray.map((e)=>{e.current.innerHTML="";})
   }
 
