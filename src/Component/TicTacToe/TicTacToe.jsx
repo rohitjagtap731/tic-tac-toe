@@ -66,8 +66,9 @@ const TicTacToe = () => {
 
   return (
     <div className='container'>
-      <h1 className='title' dangerouslySetInnerHTML={{__html:header}}></h1>
+      <span className='title' dangerouslySetInnerHTML={{__html:header}}></span>
       <div className='board'>
+        <span className='innerBorad'>
         <div className="row1">
           <div className="boxes" ref={box1} onClick={(e)=>{toggle(e,0)}}></div>
           <div className="boxes" ref={box2} onClick={(e)=>{toggle(e,1)}}></div>
@@ -83,6 +84,7 @@ const TicTacToe = () => {
           <div className="boxes" ref={box8} onClick={(e)=>{toggle(e,7)}}></div>
           <div className="boxes" ref={box9} onClick={(e)=>{toggle(e,8)}}></div>
         </div>
+        </span>
       </div>
       <button className="reset" onClick={()=>{reset()}}>Reset</button>
     </div>
